@@ -1,7 +1,10 @@
 #!usr/bin/pyhton3
 def divisible_by_2(my_list=[]):
-    ret = []
-    for x in my_list:
-        ret = ret + ([True] if not x % 2 else [False])
+    divisibles = []
+    for i in range(len(my_list)):
+        if my_list[i] % 2 == 0:
+            divisibles.append(True)
+        else:
+            divisibles.append(False)
 
-    return ret
+    return (divisibles)
