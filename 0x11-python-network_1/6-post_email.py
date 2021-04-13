@@ -7,6 +7,7 @@ and finally displays the body of the response.
 import sys
 import requests
 
-payload = {"email": sys.argv[2]}
-r = requests.post(sys.argv[1], data=payload)
-print(r.text)
+if __name__ == "__main__":
+    payload = {"email": sys.argv[2]}
+    r = requests.post(sys.argv[1], data=payload)
+    print(r.text)
